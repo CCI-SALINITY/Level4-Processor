@@ -1,50 +1,25 @@
 # Software for L4 product generation.CCI+SSS (year1)
 
 
-
-%%%%%%%%%%%%%%%%%%%%%%%%%
-
 aux_files is the sub-directory which contains the auxiliary files required as input for other routines
 
-%%%%%%%%%%%%%%%%%%%%%%%%%
-
-latlon_ease.mat : EASE grid specification
-
-
-maskdmin_ease2.mat : EASE GP distance from coast
-
-
-SM_OPER_AUX_MINMAX_20050909T023037_20500101T000000_624_001_2.nc : SSS variability and SSS min/max values
-
-
-ERR_REP_50km1d_50km30d_smooth.mat : representativity error from Mercator (+ smoothing) between maps at 50km-1d resolution and maps at 50km-30d
-
-
-ERR_REP_150km7d_50km30d_smooth.mat : representativity error from Mercator (+ smoothing) between maps at 150km-7d resolution and maps at 50km-30d  (Aquarius)
- 
-
-isas_CATDS : ISAS v6.2 SSS over EASE grid
-
-
-smos_isas_rmsd_ease_smooth.mat : rmsd of SSS from SMOS and ISAS data on EASE grid.
-
-
-smosA_20140101.mat : contains xswath specification
-
-
-corrSSS.mat : contains data allowing SMOS latitudinal correction
-
-
-mask_smos.mat : masque terre-mer SMOS
+* latlon_ease.mat : EASE grid specification
+* maskdmin_ease2.mat : EASE GP distance from coast
+* SM_OPER_AUX_MINMAX_20050909T023037_20500101T000000_624_001_2.nc : SSS variability and SSS min/max values
+* ERR_REP_50km1d_50km30d_smooth.mat : representativity error from Mercator (+ smoothing) between maps at 50km-1d resolution and maps at 50km-30d
+* ERR_REP_150km7d_50km30d_smooth.mat : representativity error from Mercator (+ smoothing) between maps at 150km-7d resolution and maps at 50km-30d  (Aquarius)
+* isas_CATDS : ISAS v6.2 SSS over EASE grid
+* smos_isas_rmsd_ease_smooth.mat : rmsd of SSS from SMOS and ISAS data on EASE grid.
+* smosA_20140101.mat : contains xswath specification
+* corrSSS.mat : contains data allowing SMOS latitudinal correction
+* mask_smos.mat : masque terre-mer SMOS
 
 
 # corr_lat_function is the directory containing the programs allowing to apply latitudinal correction on SMOS data
 
-L3OS_moyenne_main_xswath_SSS_SST_v4.m : program for computing SMOS SSS monthly fields at different xswath
-
-choix_dwell_ref_SST_v5.m : program for latitudinal bias estimation for SMOS data
-
-corr_biaisLAT_L2_SST.m : program which applies SST and latitudinal correction for SMOS data
+* L3OS_moyenne_main_xswath_SSS_SST_v4.m : program for computing SMOS SSS monthly fields at different xswath
+* choix_dwell_ref_SST_v5.m : program for latitudinal bias estimation for SMOS data
+* corr_biaisLAT_L2_SST.m : program which applies SST and latitudinal correction for SMOS data
 
 # merge_product_function is the sub-directory which contains the program allowing merging products (SMOS L2, Aquarius L3 and SMAP L2)
 
