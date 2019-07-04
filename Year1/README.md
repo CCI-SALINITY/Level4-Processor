@@ -2,6 +2,7 @@
 
 # aux_files 
 is the sub-directory which contains the auxiliary files required as input for other routines
+(auxliary files are not part of the source in github)
 
 * latlon_ease.mat : EASE grid specification
 * maskdmin_ease2.mat : EASE GP distance from coast
