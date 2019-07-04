@@ -1,4 +1,4 @@
-#Softwares and AUX FILES for L4 product generation.CCI+SSS (year1)
+# Software for L4 product generation.CCI+SSS (year1)
 
 
 
