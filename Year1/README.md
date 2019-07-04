@@ -24,7 +24,7 @@ is the directory containing the programs allowing to apply latitudinal correctio
 # merge_product_function 
 is the sub-directory which contains the program allowing merging products (SMOS L2, Aquarius L3 and SMAP L2)
 
-compute_biais_CCI.m : program which computes intersensor biases and monthly and weekly SSS fields.
+* compute_biais_CCI.m : program which computes intersensor biases and monthly and weekly SSS fields.
 
 
 # read_function 
