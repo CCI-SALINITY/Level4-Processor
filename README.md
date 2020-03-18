@@ -19,3 +19,9 @@ The main sources of satellite based SSS data are:
 -	SMAP (Soil Moisture Active Passive)
 
 Other sensor data such AMSR will appear in the next phase of the project (Year 2, 3).
+
+The input data coverage is detailed in the following figures:
+
+<img src="https://github.com/CCI-SALINITY/Level4-Processor/blob/master/Year1/CCI%20salinity%20satellite%20data%201.png">
+
+<img src="https://github.com/CCI-SALINITY/Level4-Processor/blob/master/Year1/CCI%20salinity%20satellite%20data%202.png">
