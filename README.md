@@ -99,7 +99,9 @@ The products comply with the data standard of the CCI+ project.
 
 All products can be found here:  https://catalogue.ceda.ac.uk/uuid/9ef0ebf847564c2eabe62cac4899ec41
 
-DOI http://dx.doi.org/10.5285/9ef0ebf847564c2eabe62cac4899ec41
+<b>In case you would like to use them in a presentation or publication, please be aware of the caveats available in the above link.</b>
+
+A DOI has been minted to the dataset: http://dx.doi.org/10.5285/9ef0ebf847564c2eabe62cac4899ec41
 
 
 
