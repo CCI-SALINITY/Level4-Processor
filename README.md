@@ -43,6 +43,31 @@ The Original L2C products have 40 km (39 km x 47 km elliptical footprint) spatia
 
 In-situ measurements from <b>ARGO</b> are also used. The gridded field of ocean temperature and salinity (on average over 10 Years) at standard ARGO depths produced by the ISAS analysis tool (developed by the LPO – Laboratoire de Physique des Océans) are used for final calibration as input to the Level 4 processor.
 
+<h3>Detailed Level 4 processing chain </h3>
+
+The aim of the L4 processing is: 
+-	to merge products from different satellite sensors
+-	to produce SSS at:
+o	a spatial resolution of about 50 km
+o	a time resolution of 1 month or 1 week.
+With 
+-	a spatial sampling : 25 km EASE V2 grid; 
+-	time sampling : 15 days (monthly products) and 1 day (weekly products).
+
+The processing chain breakdown is detailed on the next figure
+
+<img src="https://github.com/CCI-SALINITY/Level4-Processor/blob/master/Year1/CCI%20salinity%20full%20production%20chain.png">
+
+The processing steps are detailed hereafter:
+1.	Reading of the SSS L2/L3 products (after latitudinal correction and reprojection).
+2.	 Simultaneous computation of the inter sensor biases and the monthly SSS. Use of an Optimal Interpolation algorithm.
+3.	3 sigmas filtering by using L2/L3 errors and first SSS(t) estimation: outlier detection.
+4.	Computation of the inter sensor biases and the monthly SSS from SSS without ouliers. Computation of the a posteriori monthly SSS error and the number of outliers. 
+5.	3 sigmas filtering: weekly variability is added quadratiquely to the L2/L3 error
+6.	Computation of the weekly SSS. Use of an Optimal Interpolation algorithm. The inter sensor biases come from the step 2/ and are not computed again at this step. Computation of the a posteriori weekly SSS error and the number of outliers. 
+7.	SSS absolute calibration by using ISAS mean SSS. Calibration uses quantiles.
+
+
 <h3>Output data</h3>
 
 The Level 4 products are computed over two time periods:
