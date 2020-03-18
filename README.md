@@ -70,11 +70,16 @@ The processing steps are detailed hereafter:
 
 <h3>Output data</h3>
 
+The final Year 1 L4 dataset version is <b>1.8</b>.
+
 The Level 4 products are computed over two time periods:
 -	7 days running mean at one day time sampling
-Ex: ESACCI-SSS-L4-SSS-MERGED-OI-7DAY-RUNNINGMEAN-DAILY-25km-20120122-fv1.7.nc
+
+Ex: ESACCI-SEASURFACESALINITY-L4-SSS-MERGED_OI_7DAY_RUNNINGMEAN_DAILY_25km-20120104-fv1.8.nc
+
 -	One month at 15 days time sampling centred.
-Ex: ESACCI-SSS-L4-SSS-MERGED-OI-Monthly-CENTRED-15Day-25km-20140215-fv1.7.nc
+
+Ex: ESACCI-SEASURFACESALINITY-L4-SSS-MERGED_OI_Monthly_CENTRED_15Day_25km-20160301-fv1.8.nc
 
 The L4 products are formatted in netcdf 4. They contain the following variables:
 -	monthly and weekly SSS fields: obtained from OI algorithm (statistical approach which allows error propagation)
@@ -92,6 +97,9 @@ The L4 products are formatted in netcdf 4. They contain the following variables:
 
 The products comply with the data standard of the CCI+ project.
 
+All products can be found here:  https://catalogue.ceda.ac.uk/uuid/9ef0ebf847564c2eabe62cac4899ec41
+
+DOI http://dx.doi.org/10.5285/9ef0ebf847564c2eabe62cac4899ec41
 
 
 
