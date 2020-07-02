@@ -1,8 +1,8 @@
 # Level4-Processor
 
-<h3>Level 4 - Year 1 Processor</h3>
+<h3>Level 4 - Year 1 and 2 Processor</h3>
 
-The processing chain used in Year 1 to generate the CRDP for SSS ECV is drawn on the following picture. 3 entries are used; one for each main satellite data inputs. 
+The processing chain used in Year 1 and 2 to generate the CRDP for SSS ECV is drawn on the following picture. 3 entries are used; one for each main satellite data inputs. 
 
 <img src="https://github.com/CCI-SALINITY/Level4-Processor/blob/master/Year1/CCI%20salinity%20production%20chain.png">
 
@@ -19,7 +19,7 @@ The main sources of satellite based SSS data are:
 -	AQUARIUS
 -	SMAP (Soil Moisture Active Passive)
 
-Other sensor data such AMSR will appear in the next phase of the project (Year 2, 3).
+Other sensor data such AMSR will appear in the next phase of the project (Year 3).
 
 The input data coverage is detailed in the following figures:
 
@@ -37,7 +37,7 @@ Version of the Level 2 OS processor is 6.22 and the CATDS production is based on
 
 The original L3 mapped products are given on a Plate-Carrée equidistant cylindrical grid. They consist in binned data accumulated for all Level 2 products over a period of 7 days (Aquarius Level-3 Standard Mapped Image). The data are formatted in HDF at a resolution of 1 degree.
 
--	SMAP Level 2 data in version v3.0 are used with a latitudinal correction within SMAP RSS processing using ARGO data. No extra correction added.
+-	SMAP Level 2 data in version v4.0 are used with a latitudinal correction within SMAP RSS processing using ARGO data. No extra correction added.
 
 The Original L2C products have 40 km (39 km x 47 km elliptical footprint) spatial resolution. They are based on L1B SMAP RFI filtered antenna temperatures version 4 [SMAP_L2C]. Data are formatted in netCDF.
 
@@ -70,16 +70,16 @@ The processing steps are detailed hereafter:
 
 <h3>Output data</h3>
 
-The final Year 1 L4 dataset version is <b>1.8</b>.
+The final Year 2 L4 dataset version is <b>2.31</b>.
 
 The Level 4 products are computed over two time periods:
 -	7 days running mean at one day time sampling
 
-Ex: ESACCI-SEASURFACESALINITY-L4-SSS-MERGED_OI_7DAY_RUNNINGMEAN_DAILY_25km-20120104-fv1.8.nc
+Ex: ESACCI-SEASURFACESALINITY-L4-SSS-MERGED_OI_7DAY_RUNNINGMEAN_DAILY_25km-20120104-fv2.31.nc
 
 -	One month at 15 days time sampling centred.
 
-Ex: ESACCI-SEASURFACESALINITY-L4-SSS-MERGED_OI_Monthly_CENTRED_15Day_25km-20160301-fv1.8.nc
+Ex: ESACCI-SEASURFACESALINITY-L4-SSS-MERGED_OI_Monthly_CENTRED_15Day_25km-20160301-fv2.31.nc
 
 The L4 products are formatted in netcdf 4. They contain the following variables:
 -	monthly and weekly SSS fields: obtained from OI algorithm (statistical approach which allows error propagation)
