@@ -4,7 +4,7 @@
 
 The processing chain used in Year 1 and 2 to generate the CRDP for SSS ECV is drawn on the following picture. 3 entries are used; one for each main satellite data inputs. 
 
-<img src="https://github.com/CCI-SALINITY/Level4-Processor/blob/master/Year1/CCI%20salinity%20production%20chain.png">
+<img src="https://github.com/CCI-SALINITY/Level4-Processor/blob/master/Year2/CCI%20salinity%20production%20chain.png">
 
 The L4 processing chain intends to produce:
 -	Weekly L4 and
@@ -23,9 +23,9 @@ Other sensor data such AMSR will appear in the next phase of the project (Year 3
 
 The input data coverage is detailed in the following figures:
 
-<img src="https://github.com/CCI-SALINITY/Level4-Processor/blob/master/Year1/CCI%20salinity%20satellite%20data%201.png">
+<img src="https://github.com/CCI-SALINITY/Level4-Processor/blob/master/Year2/CCI%20salinity%20satellite%20data%201.png">
 
-<img src="https://github.com/CCI-SALINITY/Level4-Processor/blob/master/Year1/CCI%20salinity%20satellite%20data%202.png">
+<img src="https://github.com/CCI-SALINITY/Level4-Processor/blob/master/Year2/CCI%20salinity%20satellite%20data%202.png">
 
 The above inputs are originally generated on different grids, so a homogenisation of the data has been performed prior to the L4 processing.
 
@@ -56,7 +56,7 @@ With
 
 The processing chain breakdown is detailed on the next figure
 
-<img src="https://github.com/CCI-SALINITY/Level4-Processor/blob/master/Year1/CCI%20salinity%20full%20production%20chain.png">
+<img src="https://github.com/CCI-SALINITY/Level4-Processor/blob/master/Year2/CCI%20salinity%20full%20production%20chain.png">
 
 The processing steps are detailed hereafter:
 1.	Reading of the SSS L2/L3 products (after latitudinal correction and reprojection).
