@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mergeSSS>
+    <INPUT_FILE>
+        <input_path_L2_smos key="input_path_L2_smos">J:\CATDS\RE05\file_mat_full_corr_SST_v4\</input_path_L2_smos>
+        <input_path_L2_smap key="input_path_L2_smap">I:\SMAP_data\RSS\L2C_v4\file_mat_40km\</input_path_L2_smap>
+        <input_path_L2_aqua key="input_path_L2_aqua">I:\Aquarius_data\RSS\L3\file_mat\</input_path_L2_aqua>
+    </INPUT_FILE>    
+    <OUTPUT_FILE>
+        <output_path key="output_path">J:\CATDS\RE05\file_res_year2\</output_path>
+        <log_path key="log_path">J:\CATDS\RE05\file_res_year2\</log_path>
+    </OUTPUT_FILE>    
+    <AUX_FILE>
+        <latlon_ease key="latlon_ease">..\aux_files\latlon_ease.mat</latlon_ease>
+        <isas_CATDS key="isas_CATDS">..\aux_files\isas_CATDS.mat</isas_CATDS>
+        <rep150km_50km key="rep150km_50km">..\aux_files\ERR_REP_150km7d_50km30d_smooth.mat</rep150km_50km>
+        <rep50km_30km key="rep50km_30km">..\aux_files\ERR_REP_50km1d_50km30d_smooth.mat</rep50km_30km>
+        <minmax key="minmax">..\aux_files\SM_OPER_AUX_MINMAX_20050909T023037_20500101T000000_624_001_2.nc</minmax>
+        <smos_isas_rmsd key="smos_isas_rmsd">..\aux_files\smos_isas_rmsd_ease_smooth.mat</smos_isas_rmsd>
+    </AUX_FILE>
+    <param>
+        <minlon key="minlon">-180</minlon>
+        <maxlon key="maxlon">-165</maxlon>
+        <minlat key="minlat">-90</minlat>
+        <maxlat key="maxlat">90</maxlat>
+        <switch_diel_only key="switch_diel_only">0</switch_diel_only>
+        <nday_aqua key="nday_aqua">3</nday_aqua>
+        <alldata key="alldata">1</alldata>
+        <save_prod_int key="save_prod_int">0</save_prod_int>
+        <err_repr_aqua key="err_repr_aqua">1</err_repr_aqua> 
+        <err_repr_hebd key="err_repr_hebd">1</err_repr_hebd>
+        <smos_ok key="smos_ok">1</smos_ok>
+        <smap_ok key="smap_ok">1</smap_ok>
+        <aqua_ok key="aqua_ok">1</aqua_ok>
+        <itestorb key="itestorb">3</itestorb>
+        <boost_erreur key="boost_erreur">1</boost_erreur>
+        <sigbiais2 key="sigbiais2">4</sigbiais2>
+        <correlation_time_month key="correlation_time_month">25</correlation_time_month>
+        <correlation_time_hebdo key="correlation_time_hebdo">6</correlation_time_hebdo>
+        <nsig key="nsig">3</nsig>
+        <switch_hebdo key="switch_hebdo">1</switch_hebdo>
+        <xswathlim key="xswathlim">415</xswathlim>
+        <WSmax key="WSmax">16</WSmax>
+        <hebdo_factor key="hebdo_factor">1</hebdo_factor>
+        <date_selection>
+            <year>2010</year>
+            <months>[1 2 3 4 5 6 7 8 9 10 11 12]</months>
+            <year>2011</year>
+            <months>[1 2 3 4 5 6 7 8 9 10 11 12]</months>
+            <year>2012</year>
+            <months>[1 2 3 4 5 6 7 8 9 10 11 12]</months>
+            <year>2013</year>
+            <months>[1 2 3 4 5 6 7 8 9 10 11 12]</months>
+            <year>2014</year>
+            <months>[1 2 3 4 5 6 7 8 9 10 11 12]</months>
+            <year>2015</year>
+            <months>[1 2 3 4 5 6 7 8 9 10 11 12]</months>
+            <year>2016</year>
+            <months>[1 2 3 4 5 6 7 8 9 10 11 12]</months>
+            <year>2017</year>
+            <months>[1 2 3 4 5 6 7 8 9 10 11 12]</months>
+            <year>2018</year>
+            <months>[1 2 3 4 5 6 7 8 9 10 11 12]</months>
+            <year>2019</year>
+            <months>[1 2 3 4 5 6 7 8 9 10 11 12]</months>
+        </date_selection>
+    </param>
+</mergeSSS>

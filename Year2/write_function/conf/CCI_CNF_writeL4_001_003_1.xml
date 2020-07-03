@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<writeL4>
+    <INPUT_FILE>
+        <dir_product_mat key="dir_product_mat">K:\partitionD\CCI_2020\monthly_mat_v2\</dir_product_mat>
+        <product_type>mens</product_type>
+        <zones>
+            <minlon key="minlon">-180 -172 -164 -156 -148 -140 -132 -124 -116 -108 -100 -92 -84 -76 -68 -60 -52 -44 -36 -28 -20 -12 -4 4 12 20 28 36 44 52 60 68 76 84 92 100 108 116 124 132 140 148 156 164 172</minlon>
+            <maxlon key="maxlon">-172 -164 -156 -148 -140 -132 -124 -116 -108 -100 -92 -84 -76 -68 -60 -52 -44 -36 -28 -20 -12 -4 4 12 20 28 36 44 52 60 68 76 84 92 100 108 116 124 132 140 148 156 164 172 180</maxlon>
+            <minlat key="minlat">-90 -90 -90 -90 -90 -90 -90 -90 -90 -90 -90 -90 -90 -90 -90 -90 -90 -90 -90 -90 -90 -90 -90 -90 -90 -90 -90 -90 -90 -90 -90 -90 -90 -90 -90 -90 -90 -90 -90 -90 -90 -90 -90 -90 -90</minlat>
+            <maxlat key="maxlat">90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90</maxlat>
+        </zones>
+        <product_version>02.00</product_version>
+    </INPUT_FILE>    
+    <OUTPUT_FILE>
+        <output_path key="output_path">K:\CCI_2020\res\monthly\</output_path>
+        <name_generic2>ESACCI-SEASURFACESALINITY-L4-SSS-MERGED_OI_7DAY_RUNNINGMEAN_DAILY_25km-</name_generic2>
+        <name_generic>ESACCI-SEASURFACESALINITY-L4-SSS-MERGED_OI_Monthly_CENTRED_15Day_25km-</name_generic>
+        <log_path key="log_path">K:\CCI_2020\res\monthly\</log_path>
+    </OUTPUT_FILE>    
+    <AUX_FILE>
+        <latlon_ease key="latlon_ease">..\AUX_FILES\latlon_ease.mat</latlon_ease>
+        <mask_smos key="mask_smos">..\AUX_FILES\mask_smos.mat</mask_smos>
+        <err_rep key="err_rep">..\AUX_FILES\ERR_REP_50km1d_50km30d_smooth.mat</err_rep>
+        <dmin key="dmin">..\AUX_FILES\maskdmin_ease2.mat</dmin>
+        <Acard_mat key="Acard_mat">K:\CCI_data\2020\input\masqueAcard_2\</Acard_mat>
+    </AUX_FILE>
+    <param>
+        <update_netcdf key="update_netcdf">0</update_netcdf>
+        <iquant key="iquant">5</iquant>
+        <no_quant key="no_quant">2</no_quant>
+        <outmax key="outmax">0.1</outmax>
+        <icemax key="icemax">0</icemax>
+        <distmax key="distmax">50</distmax>
+    </param>
+</writeL4>

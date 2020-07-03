@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<writeL4>
+    <INPUT_FILE>
+        <dir_product_mat key="dir_product_mat">J:\CATDS\RE05\file_res_year2\</dir_product_mat>
+        <product_type>mens</product_type>
+        <zones>
+            <minlon key="minlon">-30</minlon>
+            <maxlon key="maxlon">-29</maxlon>
+            <minlat key="minlat">10</minlat>
+            <maxlat key="maxlat">11</maxlat>
+        </zones>
+        <product_version>02.00</product_version>
+    </INPUT_FILE>    
+    <OUTPUT_FILE>
+        <output_path key="output_path">J:\CATDS\RE05\CCI_L4product_year2TESTnew\month\</output_path>
+        <name_generic>ESACCI-SEASURFACESALINITY-L4-SSS-MERGED_OI_7DAY_RUNNINGMEAN_DAILY_25km-</name_generic>
+        <name_generic2>ESACCI-SEASURFACESALINITY-L4-SSS-MERGED_OI_Monthly_CENTRED_15Day_25km-</name_generic2>
+        <log_path key="log_path">J:\CATDS\RE05\CCI_L4product_year2TEST\month\</log_path>
+    </OUTPUT_FILE>    
+    <AUX_FILE>
+        <latlon_ease key="latlon_ease">..\aux_files\latlon_ease.mat</latlon_ease>
+        <mask_smos key="mask_smos">..\aux_files\mask_smos.mat</mask_smos>
+        <err_rep key="err_rep">..\aux_files\ERR_REP_50km1d_50km30d_smooth.mat</err_rep>
+        <dmin key="dmin">..\aux_files\maskdmin_ease2.mat</dmin>
+    </AUX_FILE>
+    <param>
+        <update_netcdf key="update_netcdf">0</update_netcdf>
+        <iquant key="iquant">5</iquant>
+        <no_quant key="no_quant">3</no_quant>
+        <outmax key="outmax">0.1</outmax>
+        <icemax key="icemax">0</icemax>
+        <distmax key="distmax">50</distmax>
+    </param>
+</writeL4>
