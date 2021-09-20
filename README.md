@@ -1,10 +1,20 @@
 # Level4-Processor
 
-<h3>Level 4 - Year 1 and 2 Processor</h3>
+<h3>Level 4 - Year 1, 2 and 3 Processor</h3>
 
-The processing chain used in Year 1 and 2 to generate the CRDP for SSS ECV is drawn on the following picture. 3 entries are used; one for each main satellite data inputs. 
+The processing chain used to generate the CRDP for SSS ECV is drawn on next picture. Three entries are used; one for each main satellite data inputs. The CCI+ SMOS L2 processing chain was not used for the two first CRDPs (Y1 and Y2); instead, the data was retrieved from the CATDS production chain (IFREMER/CNES/ESA). This link is now discarded. In Year 3, it was replaced with the full L2 processing chain that has then been setup and activated 
 
 <img src="https://github.com/CCI-SALINITY/Level4-Processor/blob/master/Year2/CCI%20salinity%20production%20chain.png">
+
+Main updates in version 3 of the dataset with respect to version 2 are as follows:
+•	SSS from SMOS have been generated from a complete L2 reprocessing with the following updates: OTT correction computed from ISAS-Argo instead of WOA climatology. Specific RFI filtering. ERA5 auxiliary data instead of ECMWF forecasts dataset. Dielectric constant model of [RD-33] (instead of [RD-34] in v2.3). 
+•	Ice mask has been computed from SMOS retrieved pseudo dielectric constant (Acard parameter) estimated over the whole period
+•	SMOS seasonal latitudinal biases have been computed by using Pacific + Atlantic region (only Atlantic used in v2.3)
+•	Instantaneous rain effect has been corrected, relating surface salinity freshening to IMERG rain rate following [RD-32], before estimating bias correction and before L4 merging for SMOS and SMAP SSS. Bulk SSS is now available in the L4 product. 
+•	SSS random uncertainty computation has been updated. 
+•	Aquarius SSS have been resampled on the EASE 2 grid using an interpolation with a distance weighting (instead of the closest neighbour algorithm in the v2.3)
+•	SSS is now provided much closer to coast, but additional pixels are flagged with the same land-sea mask as in v2.3. So, users who wish to ensure using same pixels as in v2.3 should use this flag; users interested in S variability very close to coast, should not apply this flag but should use data close to coast with care.   
+•	Representativity uncertainties considering the various spatio-temporal scales covered by the various sensors are taken into account for all sensors (only for Aquarius in v2.3) when estimating L4 fields. 
 
 The L4 processing chain intends to produce:
 -	Weekly L4 and
@@ -19,13 +29,11 @@ The main sources of satellite based SSS data are:
 -	AQUARIUS
 -	SMAP (Soil Moisture Active Passive)
 
-Other sensor data such AMSR will appear in the next phase of the project (Year 3).
+Other sensor data such AMSR will appear in the next phase of the project (phase 2).
 
-The input data coverage is detailed in the following figures:
+The input data coverage is detailed in the following figure:
 
 <img src="https://github.com/CCI-SALINITY/Level4-Processor/blob/master/Year2/CCI%20salinity%20satellite%20data%201.png">
-
-<img src="https://github.com/CCI-SALINITY/Level4-Processor/blob/master/Year2/CCI%20salinity%20satellite%20data%202.png">
 
 The above inputs are originally generated on different grids, so a homogenisation of the data has been performed prior to the L4 processing.
 
@@ -70,24 +78,20 @@ The processing steps are detailed hereafter:
 
 <h3>Output data</h3>
 
-The final Year 2 L4 dataset version is <b>2.31</b>.
+The final Year 3 L4 dataset version is <b>3.21</b>.
 
 The Level 4 products are computed over two time periods:
 -	7 days running mean at one day time sampling
 
-Ex: ESACCI-SEASURFACESALINITY-L4-SSS-MERGED_OI_7DAY_RUNNINGMEAN_DAILY_25km-20120104-fv2.31.nc
+Ex: ESACCI-SEASURFACESALINITY-L4-SSS-MERGED_OI_7DAY_RUNNINGMEAN_DAILY_25km-20120104-fv3.21.nc
 
 -	One month at 15 days time sampling centred.
 
-Ex: ESACCI-SEASURFACESALINITY-L4-SSS-MERGED_OI_Monthly_CENTRED_15Day_25km-20160301-fv2.31.nc
+Ex: ESACCI-SEASURFACESALINITY-L4-SSS-MERGED_OI_Monthly_CENTRED_15Day_25km-20160301-fv3.21.nc
 
 The L4 products are formatted in netcdf 4. They contain the following variables:
 -	monthly and weekly SSS fields: obtained from OI algorithm (statistical approach which allows error propagation)
 -	SSS error:  obtained from OI algorithm
--	SSS mean bias:  mean of the biases applied over a time interval
-(+/-30 for monthly data and +/-10 for weekly data). 
--	SSS std bias:  std of the biases applied over a time interval
-(+/-30 for monthly data and +/-10 for weekly data).
 -	number of outliers: over a time interval
 (+/-30 for monthly data and +/-10 for weekly data).
 -	number of data: over a time interval
