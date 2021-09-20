@@ -97,14 +97,15 @@ Ex: ESACCI-SEASURFACESALINITY-L4-SSS-MERGED_OI_7DAY_RUNNINGMEAN_DAILY_25km-20120
 Ex: ESACCI-SEASURFACESALINITY-L4-SSS-MERGED_OI_Monthly_CENTRED_15Day_25km-20160301-fv3.21.nc
 
 The L4 products are formatted in netcdf 4. They contain the following variables:
--	monthly and weekly SSS fields: obtained from OI algorithm (statistical approach which allows error propagation)
--	SSS error:  obtained from OI algorithm
--	number of outliers: over a time interval
-(+/-30 for monthly data and +/-10 for weekly data).
--	number of data: over a time interval
-(+/-30 for monthly data and +/-10 for weekly data).
--	quality flag: =1 if no data over a time interval
--	pct_var:  100x(SSS a posteriori error)²/variability  (%)
+- monthly and weekly SSS fields : obtained from OI algorithm.
+- SSS error : obtained from OI algorithm.
+- number of outliers over the considered time interval (+/-30 days for monthly data and +/-10 days for weekly data). 
+-	number of data over the considered time interval (+/-30 days for monthly data and +/-10 days for weekly data). 
+-	pct_var : 100x(SSS a posteriori error)²/variability  (%).
+-	quality flag =1 if the fraction of outliers (n outlier/n data) present over the considered time interval (+/-30 days for monthly data and +/-10 days for weekly data) is larger than 0.1. 
+-	flag ice (CCI V2) : SMOS ice detection (Dg_ice descriptor from SMOS L2OS product) is integrated over a period of +/-30 days for monthly data  or +/-10 days for weekly data. If the integrated value is greater than 0, the ice flag is raised. 
+-	coast flag (CCI V2): raised if the grid point is far from the coast at a distance less than 50 km
+
 
 The products comply with the data standard of the CCI+ project.
 
