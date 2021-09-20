@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<writeL4>
+    <INPUT_FILE>
+        <dir_product_mat key="dir_product_mat">J:\SSS\CCI\2021\productL4\</dir_product_mat>
+        <product_type>mens</product_type>
+        <zones>
+            <minlon key="minlon">-180 -175 -170 -165 -160 -155 -150 -145 -140 -135 -130 -125 -120 -115 -110 -105 -100 -95 -90 -85 -80 -75 -70 -65 -60 -55 -50 -45 -40 -35 -30 -25 -20 -15 -10 -5 0 5 10 15 20 25 30 35 40 45 50 55 60 65 70 75 80 85 90 95 100 105 110 115 120 125 130 135 140 145 150 155 160 165 170 175</minlon>
+            <maxlon key="maxlon">-175 -170 -165 -160 -155 -150 -145 -140 -135 -130 -125 -120 -115 -110 -105 -100 -95 -90 -85 -80 -75 -70 -65 -60 -55 -50 -45 -40 -35 -30 -25 -20 -15 -10 -5 0 5 10 15 20 25 30 35 40 45 50 55 60 65 70 75 80 85 90 95 100 105 110 115 120 125 130 135 140 145 150 155 160 165 170 175 180</maxlon>
+            <minlat key="minlat">-90 -90 -90 -90 -90 -90 -90 -90 -90 -90 -90 -90 -90 -90 -90 -90 -90 -90 -90 -90 -90 -90 -90 -90 -90 -90 -90 -90 -90 -90 -90 -90 -90 -90 -90 -90 -90 -90 -90 -90 -90 -90 -90 -90 -90 -90 -90 -90 -90 -90 -90 -90 -90 -90 -90 -90 -90 -90 -90 -90 -90 -90 -90 -90 -90 -90 -90 -90 -90 -90 -90 -90</minlat>
+            <maxlat key="maxlat">90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90 90</maxlat>
+        </zones>
+        <product_version>3.1</product_version>
+    </INPUT_FILE>    
+    <OUTPUT_FILE>
+        <datemin>2010 01 01</datemin>
+        <datemax>2020 09 30</datemax>
+        <output_path_hebd key="output_path_hebd">J:\SSS\CCI\2021\res2\7days\</output_path_hebd>
+        <output_path_mens key="output_path_mens">J:\SSS\CCI\2021\res2\30days\</output_path_mens>
+        <name_generic_hebd>ESACCI-SEASURFACESALINITY-L4-SSS-MERGED_OI_7DAY_RUNNINGMEAN_DAILY_25km-</name_generic_hebd>
+        <name_generic_mens>ESACCI-SEASURFACESALINITY-L4-SSS-MERGED_OI_Monthly_CENTRED_15Day_25km-</name_generic_mens>
+        <log_path key="log_path">J:\SSS\CCI\2021\res2\</log_path>
+    </OUTPUT_FILE>    
+    <AUX_FILE>
+        <latlon_ease key="latlon_ease">F:\vergely\SMOS\CCI\livrables\CCI_soft_year3\aux_files\latlon_ease.mat</latlon_ease>
+        <mask_smos key="mask_smos">F:\vergely\SMOS\CCI\livrables\CCI_soft_year3\aux_files\mask_smos.mat</mask_smos>
+        <err_rep key="err_rep">F:\vergely\SMOS\CCI\livrables\CCI_soft_year3\aux_files\ERR_REP\ERR_REP_1d50km_30d50km_mr2_ctm.mat</err_rep>
+        <dmin key="dmin">F:\vergely\SMOS\CCI\livrables\CCI_soft_year3\aux_files\maskdmin_ease2.mat</dmin>
+        <Acard_mat key="Acard_mat">J:\SSS\CCI\2020\Acard_mask\masqueAcard_10\</Acard_mat>
+    </AUX_FILE>
+    <param>
+        <update_netcdf key="update_netcdf">0</update_netcdf>
+        <iquant key="iquant">5</iquant>
+        <no_quant key="no_quant">2</no_quant>
+        <outmax key="outmax">0.1</outmax>
+        <icemax key="icemax">0</icemax>
+        <distmax key="distmax">0</distmax>
+    </param>
+</writeL4>

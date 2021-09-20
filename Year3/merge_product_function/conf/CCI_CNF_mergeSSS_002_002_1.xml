@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mergeSSS>
+    <INPUT_FILE>
+        <input_path_L2_smos key="input_path_L2_smos">J:\SSS\data\sat\dataSMOS\CCI_repro2020\file_mat_full_corr_lat_pac_RR_new\</input_path_L2_smos>
+        <input_path_L2_smap key="input_path_L2_smap">J:\SSS\data\sat\SMAP_data\RSS\L2C_v4\file_mat_40km\</input_path_L2_smap>
+        <input_path_L2_aqua key="input_path_L2_aqua">J:\SSS\data\sat\Aquarius_data\RSS\L3\year3\file_mat_3\</input_path_L2_aqua>
+    </INPUT_FILE>    
+    <OUTPUT_FILE>
+        <output_path key="output_path">resultats</output_path>
+        <log_path key="log_path">resultats</log_path>
+    </OUTPUT_FILE>    
+    <AUX_FILE>
+        <dmin key="dmin">F:\vergely\SMOS\CCI\livrables\CCI_soft_year2\aux_files\maskdmin_ease2.mat</dmin>
+        <latlon_ease key="latlon_ease">F:\vergely\SMOS\CCI\livrables\CCI_soft_year2\aux_files\latlon_ease.mat</latlon_ease>
+        <isas_CATDS key="isas_CATDS">F:\vergely\SMOS\CCI\2020\validationSMOSrepro662\isas_CATDS_2010_2020_PlateCarree.mat</isas_CATDS>
+        <rep50km_50km key="rep50km_50km">F:\vergely\SMOS\CCI\livrables\CCI_soft_year3\aux_files\ERR_REP\ERR_REP_1d50km_7d50km_mr2_ctm.mat</rep50km_50km>
+        <rep50km_50km_2 key="rep50km_50km_2">F:\vergely\SMOS\CCI\livrables\CCI_soft_year3\aux_files\ERR_REP\ERR_REP_1d50km_30d50km_mr2_ctm.mat</rep50km_50km_2>
+        <rep50km_50km_3 key="rep50km_50km_3">F:\vergely\SMOS\CCI\livrables\CCI_soft_year3\aux_files\ERR_REP\ERR_REP_7d50km_30d50km_mr2_ctm.mat</rep50km_50km_3>
+        <rep150km_50km key="rep150km_50km">F:\vergely\SMOS\CCI\livrables\CCI_soft_year3\aux_files\ERR_REP\ERR_REP_1d150km_7d50km_mr2_ctm.mat</rep150km_50km>
+        <rep150km_50km_2 key="rep150km_50km_2">F:\vergely\SMOS\CCI\livrables\CCI_soft_year3\aux_files\ERR_REP\ERR_REP_1d150km_30d50km_mr2_ctm.mat</rep150km_50km_2>
+        <smos_isas_rmsd key="smos_isas_rmsd">F:\vergely\SMOS\CCI\livrables\CCI_soft_year2\aux_files\smos_isas_rmsd_ease_smooth_v4_3sig.mat</smos_isas_rmsd>
+    </AUX_FILE>
+    <param>
+        <minlon key="minlon">-50</minlon>
+        <maxlon key="maxlon">-45</maxlon>
+        <minlat key="minlat">5.1</minlat>
+        <maxlat key="maxlat">5.3</maxlat>
+        <alldata key="alldata">2</alldata>
+        <save_prod_int key="save_prod_int">0</save_prod_int>
+        <err_repr_aqua key="err_repr_aqua">1</err_repr_aqua>
+        <err_repr_smap key="err_repr_smap">1</err_repr_smap>
+        <err_repr_smos key="err_repr_smos">1</err_repr_smos>
+        <variability_hebd key="variability_hebd">1</variability_hebd>
+        <smos_ok key="smos_ok">1</smos_ok>
+        <smap_ok key="smap_ok">1</smap_ok>
+        <aqua_ok key="aqua_ok">1</aqua_ok>
+        <RRmaxSMAP key="RRmaxSMAP">0.1</RRmaxSMAP>
+        <itestorb key="itestorb">3</itestorb>
+        <boost_erreur key="boost_erreur">1</boost_erreur>
+        <sigbiais2 key="sigbiais2">4</sigbiais2>
+        <correlation_time_month key="correlation_time_month">25</correlation_time_month>
+        <correlation_time_hebdo key="correlation_time_hebdo">6</correlation_time_hebdo>
+        <nsig key="nsig">3</nsig>
+        <switch_hebdo key="switch_hebdo">1</switch_hebdo>
+        <xswathlim key="xswathlim">415</xswathlim>
+        <WSmax key="WSmax">16</WSmax>
+        <hebdo_factor key="hebdo_factor">1</hebdo_factor>
+        <date_selection>
+            <year>2010</year>
+            <months>[1 2 3 4 5 6 7 8 9 10 11 12]</months>
+            <year>2011</year>
+            <months>[1 2 3 4 5 6 7 8 9 10 11 12]</months>
+            <year>2012</year>
+            <months>[1 2 3 4 5 6 7 8 9 10 11 12]</months>
+            <year>2013</year>
+            <months>[1 2 3 4 5 6 7 8 9 10 11 12]</months>
+            <year>2014</year>
+            <months>[1 2 3 4 5 6 7 8 9 10 11 12]</months>
+            <year>2015</year>
+            <months>[1 2 3 4 5 6 7 8 9 10 11 12]</months>
+            <year>2016</year>
+            <months>[1 2 3 4 5 6 7 8 9 10 11 12]</months>
+            <year>2017</year>
+            <months>[1 2 3 4 5 6 7 8 9 10 11 12]</months>
+            <year>2018</year>
+            <months>[1 2 3 4 5 6 7 8 9 10 11 12]</months>
+            <year>2019</year>
+            <months>[1 2 3 4 5 6 7 8 9 10 11 12]</months>
+            <year>2020</year>
+            <months>[1 2 3 4 5 6 7 8 9 10]</months>
+        </date_selection>
+    </param>
+</mergeSSS>
