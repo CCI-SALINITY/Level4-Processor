@@ -4,7 +4,7 @@
 
 The processing chain used to generate the CRDP for SSS ECV is drawn on next picture. Three entries are used; one for each main satellite data inputs. The CCI+ SMOS L2 processing chain was not used for the two first CRDPs (Y1 and Y2); instead, the data was retrieved from the CATDS production chain (IFREMER/CNES/ESA). This link is now discarded. In Year 3, it was replaced with the full L2 processing chain that has then been setup and activated 
 
-<img src="https://github.com/CCI-SALINITY/Level4-Processor/blob/master/Year2/CCI%20salinity%20production%20chain.png">
+<img src="https://github.com/CCI-SALINITY/Level4-Processor/blob/master/Year3/CCI%20salinity%20production%20chain.png">
 
 Main updates in version 3 of the dataset with respect to version 2 are as follows:
 •	SSS from SMOS have been generated from a complete L2 reprocessing with the following updates: OTT correction computed from ISAS-Argo instead of WOA climatology. Specific RFI filtering. ERA5 auxiliary data instead of ECMWF forecasts dataset. Dielectric constant model of [RD-33] (instead of [RD-34] in v2.3). 
@@ -33,7 +33,7 @@ Other sensor data such AMSR will appear in the next phase of the project (phase 
 
 The input data coverage is detailed in the following figure:
 
-<img src="https://github.com/CCI-SALINITY/Level4-Processor/blob/master/Year2/CCI%20salinity%20satellite%20data%201.png">
+<img src="https://github.com/CCI-SALINITY/Level4-Processor/blob/master/Year3/CCI%20salinity%20satellite%20data%201.png">
 
 The above inputs are originally generated on different grids, so a homogenisation of the data has been performed prior to the L4 processing.
 
