@@ -8,12 +8,19 @@ The processing chain used to generate the CRDP for SSS ECV is drawn on next pict
 
 Main updates in version 3 of the dataset with respect to version 2 are as follows:
 •	SSS from SMOS have been generated from a complete L2 reprocessing with the following updates: OTT correction computed from ISAS-Argo instead of WOA climatology. Specific RFI filtering. ERA5 auxiliary data instead of ECMWF forecasts dataset. Dielectric constant model of [RD-33] (instead of [RD-34] in v2.3). 
+
 •	Ice mask has been computed from SMOS retrieved pseudo dielectric constant (Acard parameter) estimated over the whole period
+
 •	SMOS seasonal latitudinal biases have been computed by using Pacific + Atlantic region (only Atlantic used in v2.3)
+
 •	Instantaneous rain effect has been corrected, relating surface salinity freshening to IMERG rain rate following [RD-32], before estimating bias correction and before L4 merging for SMOS and SMAP SSS. Bulk SSS is now available in the L4 product. 
+
 •	SSS random uncertainty computation has been updated. 
+
 •	Aquarius SSS have been resampled on the EASE 2 grid using an interpolation with a distance weighting (instead of the closest neighbour algorithm in the v2.3)
+
 •	SSS is now provided much closer to coast, but additional pixels are flagged with the same land-sea mask as in v2.3. So, users who wish to ensure using same pixels as in v2.3 should use this flag; users interested in S variability very close to coast, should not apply this flag but should use data close to coast with care.   
+
 •	Representativity uncertainties considering the various spatio-temporal scales covered by the various sensors are taken into account for all sensors (only for Aquarius in v2.3) when estimating L4 fields. 
 
 The L4 processing chain intends to produce:
