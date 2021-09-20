@@ -73,15 +73,13 @@ The processing chain breakdown is detailed on the next figure
 
 <img src="https://github.com/CCI-SALINITY/Level4-Processor/blob/master/Year2/CCI%20salinity%20full%20production%20chain.png">
 
-The processing steps are detailed hereafter:
-1.	Reading of the SSS L2/L3 products (after latitudinal correction and reprojection).
-2.	 Simultaneous computation of the inter sensor biases and the monthly SSS. Use of an Optimal Interpolation algorithm.
-3.	3 sigmas filtering by using L2/L3 errors and first SSS(t) estimation: outlier detection.
-4.	Computation of the inter sensor biases and the monthly SSS from SSS without ouliers. Computation of the a posteriori monthly SSS error and the number of outliers. 
-5.	3 sigmas filtering: weekly variability is added quadratiquely to the L2/L3 error
-6.	Computation of the weekly SSS. Use of an Optimal Interpolation algorithm. The inter sensor biases come from the step 2/ and are not computed again at this step. Computation of the a posteriori weekly SSS error and the number of outliers. 
-7.	SSS absolute calibration by using ISAS mean SSS. Calibration uses quantiles.
-
+The main processing steps are listed hereafter:
+1.	Pre-processing of the SSS L2/L3 products from the different sensors; Latitudinal correction and reprojection on the EASE-2 grid
+2.	3-sigma filtering and temporal Optimal Interpolation to generate monthly SSS without inter sensor bias removal
+3.	3-sigma filtering and temporal Optimal Interpolation to generate weekly SSS without inter sensor bias removal
+4.	 Across-track and inter sensor bias removal
+5.	3-sigma filtering and temporal Optimal Interpolation to generate monthly SSS. Error propagation
+6.	3-sigma filtering and temporal OI to generate weekly SSS using monthly SSS as prior. Error propagation. 
 
 <h3>Output data</h3>
 
