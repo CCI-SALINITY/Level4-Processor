@@ -77,7 +77,7 @@ With
 
 The processing chain breakdown is detailed on the next figure
 
-<img src="https://github.com/CCI-SALINITY/Level4-Processor/blob/master/Year2/CCI%20salinity%20full%20production%20chain.png">
+<img src="https://github.com/CCI-SALINITY/Level4-Processor/blob/master/Year3/CCI%20salinity%20full%20production%20chain.png">
 
 The main processing steps are listed hereafter:
 1.	Pre-processing of the SSS L2/L3 products from the different sensors; Latitudinal correction and reprojection on the EASE-2 grid
@@ -111,13 +111,52 @@ The L4 products are formatted in netcdf 4. They contain the following variables:
 -	coast flag (CCI V2): raised if the grid point is far from the coast at a distance less than 50 km
 
 
+<h3>Monthly products</h3>
+
+The monthly SSS are evaluated in 3 steps: 
+1) A first estimation of the biases and time series of SSS, spatial grid node by spatial grid node is performed,
+2) A 3-sigma filtering of the observed SSS in comparison with the estimated SSS is done.
+3) A second estimate of SSS biases and time series after removing outliers.
+The relative biases used to derive monthly SSS are estimated taking the averaged SSS from the SMOS central across swath location as a priori. 
+
+<h3>Weekly products</h3>
+
+To estimate the weekly SSS, the biases calculated on the monthly SSS are used. The weekly fluctuations are estimated around the monthly SSS as a priori. A 3-sigma filter is used where:
+sigma = sqrt(error_L2OS ² + variability²). 
+The variability is estimated from Mercator model. This eliminates outliers that deviate too far from expected values. 
+
+
 The products comply with the data standard of the CCI+ project.
 
-All products can be found here (version 1):  https://catalogue.ceda.ac.uk/uuid/9ef0ebf847564c2eabe62cac4899ec41
+•	Dataset version produced in Year 1 is 1.8. It is associated to the following doi:
+http://dx.doi.org/10.5285/9ef0ebf847564c2eabe62cac4899ec41
 
-<b>In case you would like to use them in a presentation or publication, please be aware of the caveats available in the above link.</b>
+It covers the temporal range from January 1st 2010 to November 16th 2018.
 
-A DOI has been minted to the dataset (version 1): http://dx.doi.org/10.5285/9ef0ebf847564c2eabe62cac4899ec41
+•	Dataset version produced in Year 2 is 2.31 and is associated to the doi: 
+http://dx.doi.org/10.5285/4ce685bff631459fb2a30faa699f3fc5
+
+It covers the temporal range from January 1st 2010 to December 31st 2019.
+
+•	Dataset version produced in Year 3 is 3.21 and is associated to the doi: 
+http://dx.doi.org/10.5285/5920a2c77e3c45339477acd31ce62c3c 
+
+It covers the temporal range from January 1st 2010 to September 29th 2020.
+
+The dataset can be accessed via the ESA CCI website: https://climate.esa.int/en/odp/#/project.
+
+Follow “Sea Surface Salinity” link and click on “FTP Download” which points to:
+
+(ftp://anon-ftp.ceda.ac.uk/neodc/esacci/sea_surface_salinity/data)
+
+The catalogue of the CEDA website also offers download links to the dataset:
+-	Year 1: https://catalogue.ceda.ac.uk/uuid/9ef0ebf847564c2eabe62cac4899ec41
+-	Year 2: https://catalogue.ceda.ac.uk/uuid/eacb7580e1b54afeaabb0fd2b0a53828
+-	Year 3: https://catalogue.ceda.ac.uk/uuid/5920a2c77e3c45339477acd31ce62c3c
+
+
+<b>In case you would like to use them in a presentation or publication, please be aware of the caveats available in the above links.</b>
+
 
 
 
