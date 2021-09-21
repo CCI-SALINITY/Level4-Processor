@@ -7,6 +7,7 @@ The processing chain used to generate the CRDP for SSS ECV is drawn on next pict
 <img src="https://github.com/CCI-SALINITY/Level4-Processor/blob/master/Year3/CCI%20salinity%20production%20chain.png">
 
 Main updates in version 3 of the dataset with respect to version 2 are as follows:
+
 •	SSS from SMOS have been generated from a complete L2 reprocessing with the following updates: OTT correction computed from ISAS-Argo instead of WOA climatology. Specific RFI filtering. ERA5 auxiliary data instead of ECMWF forecasts dataset. Dielectric constant model of [RD-33] (instead of [RD-34] in v2.3). 
 
 •	Ice mask has been computed from SMOS retrieved pseudo dielectric constant (Acard parameter) estimated over the whole period
