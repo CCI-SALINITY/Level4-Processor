@@ -62,11 +62,16 @@ In-situ measurements from <b>ARGO</b> are also used. The gridded field of ocean 
 <h3>Detailed Level 4 processing chain </h3>
 
 The aim of the L4 processing is: 
+
 -	to merge products from different satellite sensors
 -	to produce SSS at:
+
 o	a spatial resolution of about 50 km
+
 o	a time resolution of 1 month or 1 week.
+
 With 
+
 -	a spatial sampling : 25 km EASE V2 grid; 
 -	time sampling : 15 days (monthly products) and 1 day (weekly products).
 
